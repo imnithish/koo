@@ -1,0 +1,38 @@
+object Dependencies {
+    val kotlin by lazy { "androidx.core:core-ktx:${Versions.kotlin}" }
+    val compose by lazy { "androidx.compose.ui:ui:${Versions.compose}" }
+    val composeFoundation by lazy { "androidx.compose.foundation:foundation:1.2.0-alpha06" }
+    val material by lazy { "androidx.compose.material:material:${Versions.compose}" }
+    val composePreview by lazy { "androidx.compose.ui:ui-tooling-preview:${Versions.compose}" }
+    val androidXLifecycle by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.androidx_lifecycle}" }
+    val activityCompose by lazy { "androidx.activity:activity-compose:${Versions.activity_compose}" }
+    val jUnit by lazy { "junit:junit:4.13.2" }
+    val jUnitTest by lazy { "androidx.test.ext:junit:1.1.3" }
+    val espressoAndroidTest by lazy { "androidx.test.espresso:espresso-core:3.4.0" }
+    val composeJUnitAndroidTest by lazy { "androidx.compose.ui:ui-test-junit4:1.1.1" }
+    val composeTooling by lazy { "androidx.compose.ui:ui-tooling:1.1.1" }
+
+    object Networking {
+        val okHttpBOM by lazy { "com.squareup.okhttp3:okhttp-bom:${Versions.okhttp_bom}" }
+        val okHttp by lazy { "com.squareup.okhttp3:okhttp" }
+        val okHttpLoggingInterceptor by lazy { "com.squareup.okhttp3:logging-interceptor" }
+        val retrofit by lazy { "com.squareup.retrofit2:retrofit:${Versions.retrofit}" }
+    }
+
+    object Accompanist {
+        val navigationAnimation by lazy { "com.google.accompanist:accompanist-navigation-animation:${Versions.accompanist}" }
+        val pager by lazy { "com.google.accompanist:accompanist-pager:${Versions.accompanist}" }
+        val pagerIndicator by lazy { "com.google.accompanist:accompanist-pager-indicators:${Versions.accompanist}" }
+        val systemUIController by lazy { "com.google.accompanist:accompanist-systemuicontroller:${Versions.accompanist}" }
+        val flowRow by lazy { "com.google.accompanist:accompanist-flowlayout:${Versions.accompanist}" }
+    }
+
+    object DaggerHilt {
+        val daggerHiltGradlePlugin by lazy { "com.google.dagger:hilt-android-gradle-plugin:${Versions.dagger_hilt_gradle_plugin}" }
+        val daggerHilt by lazy { "com.google.dagger:hilt-android:${Versions.dagger_hilt}" }
+        val daggerHiltKapt by lazy { "com.google.dagger:hilt-android-compiler:${Versions.dagger_hilt}" }
+        val daggerHilViewModel by lazy { "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.dagger_hilt_view_model}" }
+        val daggerHiltNavigationCompose by lazy { "androidx.hilt:hilt-navigation-compose:1.0.0:${Versions.dagger_hilt_navigation}" }
+
+    }
+}
